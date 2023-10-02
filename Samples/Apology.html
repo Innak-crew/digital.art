@@ -3085,23 +3085,23 @@
         const svgPath1 = document.querySelectorAll('.path1');
         const svgPath2 = document.querySelectorAll('.path2');
 
-        const svgText1 = anime({
+         const svgText1 = anime({
             targets: svgPath1,
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'linear',
-            duration: 500,
+            duration: 1000,
             delay: function (el, i) { return i * 20 },
             direction: 'alternate',
-            loop: true
+            loop: false
         });
         const svgText2 = anime({
             targets: svgPath2,
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'linear',
-            duration: 500,
-            delay: function (el, i) { return i * 10 },
+            duration: 1000,
+            delay: function (el, i) { return i * 20 },
             direction: 'alternate',
-            loop: true
+            loop: false
         });
 
         const svgmessage = document.querySelector('.message');
